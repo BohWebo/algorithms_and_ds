@@ -1,3 +1,5 @@
+
+
 function sumOfSquaresFirstN(n) {
     let l = 0;
     let k = 1;

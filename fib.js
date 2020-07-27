@@ -1,4 +1,4 @@
-const {memorize} = require('./utils');
+import {memorize} from './utils.js';
 
 function fibIterArr(n) {
     const arr = Array(n);

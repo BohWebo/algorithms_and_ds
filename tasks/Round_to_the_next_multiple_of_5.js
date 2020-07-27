@@ -1,4 +1,4 @@
-const {memorize} = require('../utils');
+import {memorize} from  '../utils';
 
 /*
 * Given an integer as input, can you round it to the next (meaning, "higher") 5?
@@ -18,9 +18,9 @@ etc.
 * */
 
 
-const roundToNext5Recur = (n) => (n % 5) === 0
-    ? n
-    : roundToNext5Recur(n + 1);
+const roundToNext5Recur = (n) => (n % 5)
+    ? roundToNext5Recur(n + 1)
+    : n;
 
 const memorizedRoundToNext5Recur = memorize(roundToNext5Recur);
 

@@ -1,11 +1,11 @@
 function qSort(arr) {
     if (arr.length < 2) return arr;
 
-    const pivot = arr[0];
+    const pivot = arr.shift();
     const greater = [];
     const less = [];
 
-    arr.slice(1).forEach(item => item < pivot
+    arr.forEach(item => item < pivot
         ? greater.push(item)
         : less.push(item));
 

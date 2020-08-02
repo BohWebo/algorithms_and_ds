@@ -1,4 +1,4 @@
-module.exports.LinkedListNode = class {
+export const LinkedListNode = class {
     constructor(value, next = null) {
         this.value = value;
         this.next = next;
@@ -9,5 +9,4 @@ module.exports.LinkedListNode = class {
             ? cb(this.value)
             : `${this.value}`
     }
-
 };

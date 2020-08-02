@@ -1,6 +1,6 @@
-const {LinkedListNode} = require('./LinkedListNode');
+import {LinkedListNode} from  './LinkedListNode.js';
 
-module.exports.LinkedList = class {
+export const LinkedList = class {
     constructor() {
         this.head = null;
         this.tail = null;
@@ -174,10 +174,5 @@ module.exports.LinkedList = class {
 
         return this;
     }
-
-
-
-
-
 
 };

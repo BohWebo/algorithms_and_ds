@@ -1,8 +1,14 @@
-import {StackAndQueueBase} from '../StackAndQueueBase.js';
+export class StackBasedOnArray {
+    constructor(array = []) {
+        this.array = array;
+    }
 
-export class StackBasedOnArray extends StackAndQueueBase {
-    constructor(array) {
-        super(array);
+    isEmpty() {
+        return !this.array.length;
+    }
+
+    getBuffer() {
+        return this.array.slice();
     }
 
     peek() {

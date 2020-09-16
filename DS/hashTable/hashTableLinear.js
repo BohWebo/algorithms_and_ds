@@ -57,9 +57,6 @@ class HashTableLinear {
 
 const exampleTable = new HashTableLinear(15);
 
-exampleTable.put(2, 'first');
-exampleTable.put(1, 'second');
-exampleTable.put(3, 'third');
 exampleTable
     .put(6, '6th')
     .put(7, '6th')

@@ -1,12 +1,7 @@
-import {StackAndQueueBase} from '../StackAndQueueBase.js';
 
-export class QueueBasedOnArray extends StackAndQueueBase {
-    constructor(array) {
-        super(array)
-    }
-
-    peek() {
-        return this.array[0];
+export class QueueBasedOnArray {
+    constructor(array = []) {
+        this.array = array;
     }
 
     enqueue(item) {
@@ -17,6 +12,18 @@ export class QueueBasedOnArray extends StackAndQueueBase {
 
     dequeue() {
         return this.array.shift();
+    }
+
+    isEmpty() {
+        return !this.array.length;
+    }
+
+    getBuffer() {
+        return this.array.slice();
+    }
+
+    peek() {
+        return this.array[0];
     }
 
 }

@@ -1,7 +1,7 @@
 import {StackBasedOnArray} from '../stack/stackBasedOnArray.js';
 import {QueueBasedOnArray} from './QueueBasedOnArray.js';
 
-class TwoStackQueue {
+export class TwoStackQueue {
     constructor() {
         this.inbox = new StackBasedOnArray();
         this.outbox = new StackBasedOnArray();
